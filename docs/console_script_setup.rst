@@ -9,9 +9,6 @@ Optionally, your package can include a console script
 How It Works
 ------------
 
-If the 'command_line_interface' option is set to ['click'] during setup, cookiecutter will
-add a file 'cli.py' in the project_slug subdirectory. An entry point is added to
-setup.py that points to the main function in cli.py.
 
 Usage
 ------------
@@ -36,9 +33,6 @@ Installing the project in a development environment using:
 
     python setup.py develop
 
-will not set up the entry point correctly. This is a known issue with Click.
-The following will work as expected:
-
 .. code-block:: bash
 
     python setup.py install
@@ -46,9 +40,3 @@ The following will work as expected:
 
 With 'mypackage' adjusted to the specific project.
 
-
-More Details
-------------
-
-You can read more about Click at:
-http://click.pocoo.org/
